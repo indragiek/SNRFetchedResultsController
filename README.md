@@ -8,7 +8,7 @@
 
 ### Limitations
 
-- `SNRFetchedResultsController` does not support sections or caching, mainly because (unlike `UITableView``) `NSTableView`` does not support sections. That said, `SNRFetchedResultsController` can be used with custom UI controls that do support sectioning, so this would be a nice feature to add in the future.
+- `SNRFetchedResultsController` does not support sections or caching, mainly because (unlike `UITableView`) `NSTableView` does not support sections. That said, `SNRFetchedResultsController` can be used with custom UI controls that do support sectioning, so this would be a nice feature to add in the future.
 
 ### Differences
 
