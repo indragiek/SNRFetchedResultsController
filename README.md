@@ -1,6 +1,6 @@
 ## SNRFetchedResultsController: Automatic Core Data change tracking for OS X
 
-`SNRFetchedResultsController` is a "port" (not exactly) of `NSFetchedResultsController`` from iOS to OS X. It is not a drop in replacement for `NSFetchedResultsController`, but performs many of the same tasks in relation to managing results from a Core Data fetch and notifying a delegate when objects are inserted, deleted, updated, or moved in order to update the UI. 
+`SNRFetchedResultsController` is a "port" (not exactly) of `NSFetchedResultsController` from iOS to OS X. It is not a drop in replacement for `NSFetchedResultsController`, but performs many of the same tasks in relation to managing results from a Core Data fetch and notifying a delegate when objects are inserted, deleted, updated, or moved in order to update the UI. 
 
 **This project is in its early stages and probably has a few (many?) bugs. Any feedback, bug reports, and code contributions are greatly appreciated.**
 
