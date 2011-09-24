@@ -2,6 +2,8 @@
 
 `SNRFetchedResultsController` is a "port" (not exactly) of `NSFetchedResultsController`` from iOS to OS X. It is not a drop in replacement for `NSFetchedResultsController`, but performs many of the same tasks in relation to managing results from a Core Data fetch and notifying a delegate when objects are inserted, deleted, updated, or moved in order to update the UI. 
 
+**This project is in its early stages and probably has a few (many?) bugs. Any feedback, bug reports, and code contributions are greatly appreciated.**
+
 ## NSFetchedResultsController vs. SNRFetchedResultsController
 
 ### Limitations
@@ -22,17 +24,17 @@ This project was written assuming that the code would be compiled under ARC. Thi
 
 ````
 NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    request.entity = [NSEntityDescription entityForName:@"Car" inManagedObjectContext:context];
-    request.sortDescriptors = [NSArray arrayWithObjects:[NSSortDescriptor sortDescriptorWithKey:@"year" ascending:YES], nil];
-    request.predicate = [NSPredicate predicateWithFormat:@"wheels.@count != 0"];
-    request.fetchBatchSize = 20;
-    self.fetchedResultsController = [[SNRFetchedResultsController alloc] initWithManagedObjectContext:context fetchRequest:request];
-    self.fetchedResultsController.delegate = self;
-    NSError *error = nil;
-    [self.fetchedResultsController performFetch:&error];
-    if (error) {
-        NSLog(@"Unresolved error: %@ %@", error, [error userInfo]);
-    }
+request.entity = [NSEntityDescription entityForName:@"Car" inManagedObjectContext:context];
+request.sortDescriptors = [NSArray arrayWithObjects:[NSSortDescriptor sortDescriptorWithKey:@"year" ascending:YES], nil];
+request.predicate = [NSPredicate predicateWithFormat:@"wheels.@count != 0"];
+request.fetchBatchSize = 20;
+self.fetchedResultsController = [[SNRFetchedResultsController alloc] initWithManagedObjectContext:context fetchRequest:request];
+self.fetchedResultsController.delegate = self;
+NSError *error = nil;
+[self.fetchedResultsController performFetch:&error];
+if (error) {
+    NSLog(@"Unresolved error: %@ %@", error, [error userInfo]);
+}
 ````
 
 ### NSTableViewDataSource implementation
