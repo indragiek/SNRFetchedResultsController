@@ -16,7 +16,7 @@
 
 ## ARC
 
-This project was written assuming that the code would be compiled under ARC. This means that there is no memory management code present, so if you are going to use this class in a non-ARC project then the correct retain/release calls will need to be inserted manually.
+This project was written assuming that the code would be compiled under ARC. This means that there is no memory management code present, so if you are going to use this class in a non-ARC project then the correct retain/release calls will have to be inserted manually OR you will have to compile `SNRFetchedResultsController.m` with the `-fobjc-arc` flag.
 
 ## Example Usage
 
