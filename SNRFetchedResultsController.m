@@ -125,7 +125,6 @@
         // Check to see if the content array contains the deleted object
         NSUInteger index = [sFetchedObjects indexOfObject:object];
         if (index == NSNotFound) { continue; }
-        NSManagedObject *object = [sFetchedObjects objectAtIndex:index];
         [sFetchedObjects removeObjectAtIndex:index];
         [self delegateDidChangeObject:object atIndex:index forChangeType:SNRFetchedResultsChangeDelete newIndex:NSNotFound];
     }
@@ -141,7 +140,6 @@
         // If the content array already contains the object but the update resulted in the predicate
         // no longer evaluating to TRUE, then it needs to be removed
         if (containsObject && !predicateEvaluates) {
-            NSManagedObject *object = [sFetchedObjects objectAtIndex:objectIndex];
             [sFetchedObjects removeObjectAtIndex:objectIndex];
             [self delegateDidChangeObject:object atIndex:objectIndex forChangeType:SNRFetchedResultsChangeDelete newIndex:NSNotFound];
         // If the content array does not contain the object but the object's update resulted in the predicate now 
