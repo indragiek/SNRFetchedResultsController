@@ -196,14 +196,13 @@
         if ([sortDescriptors count]) {
             [sFetchedObjects sortUsingDescriptors:sortDescriptors];
             // Enumerate through each of the inserted objects and notify the delegate of their new position
-            for (NSManagedObject *object in sFetchedObjects) {
+            [sFetchedObjects enumerateObjectsUsingBlock:^(NSManagedObject *object, NSUInteger idx, BOOL *stop) {
                 if (![inserted containsObject:object]) {
-                    continue;
+                    return;
                 }
 
-                NSUInteger newIndex = [sFetchedObjects indexOfObject:object];
-                [self delegateDidChangeObject:object atIndex:NSNotFound forChangeType:SNRFetchedResultsChangeInsert newIndex:newIndex];
-            }
+                [self delegateDidChangeObject:object atIndex:NSNotFound forChangeType:SNRFetchedResultsChangeInsert newIndex:idx];
+            }];
             // If there are no sort descriptors, then the inserted objects will just be added to the end of the array
             // so we don't need to figure out what indexes they were inserted in
         } else {
