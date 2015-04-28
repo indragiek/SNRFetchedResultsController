@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+//! Project version number for SNRFetchedResultsController.
+FOUNDATION_EXPORT double SNRFetchedResultsControllerVersionNumber;
+
+//! Project version string for SNRFetchedResultsController.
+FOUNDATION_EXPORT const unsigned char SNRFetchedResultsControllerVersionString[];
+
 enum {
     SNRFetchedResultsChangeInsert = 1,
     SNRFetchedResultsChangeDelete = 2,
