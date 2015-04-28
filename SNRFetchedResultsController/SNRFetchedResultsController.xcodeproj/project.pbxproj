@@ -8,28 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6EF11ECB1AF00AD700A7C4BC /* SNRFetchedResultsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EF11ECA1AF00AD700A7C4BC /* SNRFetchedResultsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EF11ED11AF00AD700A7C4BC /* SNRFetchedResultsController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF11EC51AF00AD700A7C4BC /* SNRFetchedResultsController.framework */; };
-		6EF11ED81AF00AD700A7C4BC /* SNRFetchedResultsControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF11ED71AF00AD700A7C4BC /* SNRFetchedResultsControllerTests.m */; };
 		6EF11EEB1AF00B3C00A7C4BC /* SNRFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF11EEA1AF00B3C00A7C4BC /* SNRFetchedResultsController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6EF11ED21AF00AD700A7C4BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6EF11EBC1AF00AD700A7C4BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6EF11EC41AF00AD700A7C4BC;
-			remoteInfo = SNRFetchedResultsController;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6EF11EC51AF00AD700A7C4BC /* SNRFetchedResultsController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNRFetchedResultsController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF11EC91AF00AD700A7C4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EF11ECA1AF00AD700A7C4BC /* SNRFetchedResultsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNRFetchedResultsController.h; sourceTree = "<group>"; };
-		6EF11ED01AF00AD700A7C4BC /* SNRFetchedResultsControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNRFetchedResultsControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EF11ED61AF00AD700A7C4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EF11ED71AF00AD700A7C4BC /* SNRFetchedResultsControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNRFetchedResultsControllerTests.m; sourceTree = "<group>"; };
 		6EF11EEA1AF00B3C00A7C4BC /* SNRFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNRFetchedResultsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EF11ECD1AF00AD700A7C4BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6EF11ED11AF00AD700A7C4BC /* SNRFetchedResultsController.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				6EF11EC71AF00AD700A7C4BC /* SNRFetchedResultsController */,
-				6EF11ED41AF00AD700A7C4BC /* SNRFetchedResultsControllerTests */,
 				6EF11EC61AF00AD700A7C4BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				6EF11EC51AF00AD700A7C4BC /* SNRFetchedResultsController.framework */,
-				6EF11ED01AF00AD700A7C4BC /* SNRFetchedResultsControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,23 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				6EF11EC91AF00AD700A7C4BC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6EF11ED41AF00AD700A7C4BC /* SNRFetchedResultsControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				6EF11ED71AF00AD700A7C4BC /* SNRFetchedResultsControllerTests.m */,
-				6EF11ED51AF00AD700A7C4BC /* Supporting Files */,
-			);
-			path = SNRFetchedResultsControllerTests;
-			sourceTree = "<group>";
-		};
-		6EF11ED51AF00AD700A7C4BC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6EF11ED61AF00AD700A7C4BC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,24 +95,6 @@
 			productReference = 6EF11EC51AF00AD700A7C4BC /* SNRFetchedResultsController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6EF11ECF1AF00AD700A7C4BC /* SNRFetchedResultsControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6EF11EDE1AF00AD700A7C4BC /* Build configuration list for PBXNativeTarget "SNRFetchedResultsControllerTests" */;
-			buildPhases = (
-				6EF11ECC1AF00AD700A7C4BC /* Sources */,
-				6EF11ECD1AF00AD700A7C4BC /* Frameworks */,
-				6EF11ECE1AF00AD700A7C4BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6EF11ED31AF00AD700A7C4BC /* PBXTargetDependency */,
-			);
-			name = SNRFetchedResultsControllerTests;
-			productName = SNRFetchedResultsControllerTests;
-			productReference = 6EF11ED01AF00AD700A7C4BC /* SNRFetchedResultsControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,9 +106,6 @@
 				ORGANIZATIONNAME = indragiek;
 				TargetAttributes = {
 					6EF11EC41AF00AD700A7C4BC = {
-						CreatedOnToolsVersion = 6.3;
-					};
-					6EF11ECF1AF00AD700A7C4BC = {
 						CreatedOnToolsVersion = 6.3;
 					};
 				};
@@ -186,20 +123,12 @@
 			projectRoot = "";
 			targets = (
 				6EF11EC41AF00AD700A7C4BC /* SNRFetchedResultsController */,
-				6EF11ECF1AF00AD700A7C4BC /* SNRFetchedResultsControllerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6EF11EC31AF00AD700A7C4BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6EF11ECE1AF00AD700A7C4BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,23 +146,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EF11ECC1AF00AD700A7C4BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6EF11ED81AF00AD700A7C4BC /* SNRFetchedResultsControllerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6EF11ED31AF00AD700A7C4BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6EF11EC41AF00AD700A7C4BC /* SNRFetchedResultsController */;
-			targetProxy = 6EF11ED21AF00AD700A7C4BC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6EF11ED91AF00AD700A7C4BC /* Debug */ = {
@@ -355,38 +268,6 @@
 			};
 			name = Release;
 		};
-		6EF11EDF1AF00AD700A7C4BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SNRFetchedResultsControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		6EF11EE01AF00AD700A7C4BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SNRFetchedResultsControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,14 +285,6 @@
 			buildConfigurations = (
 				6EF11EDC1AF00AD700A7C4BC /* Debug */,
 				6EF11EDD1AF00AD700A7C4BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		6EF11EDE1AF00AD700A7C4BC /* Build configuration list for PBXNativeTarget "SNRFetchedResultsControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6EF11EDF1AF00AD700A7C4BC /* Debug */,
-				6EF11EE01AF00AD700A7C4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
